@@ -1,0 +1,10 @@
+.header{
+    height:13vh;
+    background-color: brown;
+}
+.header__logo{
+    padding-top: 4vh;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}

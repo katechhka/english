@@ -1,0 +1,9 @@
+.footer{
+    margin-top: 10vh;
+    height:10vh;
+    background-color: rgb(66, 66, 66);
+}
+.footer__text{
+    color:white;
+    padding-top: 3vh;
+}

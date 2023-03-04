@@ -1,0 +1,76 @@
+.table__card{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 7vw;
+    width:80vw;
+    height:6vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:10vw;
+    border:2px solid brown;
+    border-radius: 20px;
+}
+
+.selected{
+    background-color: rgb(255, 234, 209);
+}
+
+.icon{
+    width:20px;
+}
+.table__buttons{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.table__button1{
+    display:none;
+    width: 40px;
+    background-color: rgb(72, 145, 72);
+}
+.table__button1:hover, .table__button2:hover, .table__button3:hover, .table__button4:hover{
+    box-shadow: 0px 1px 29px -9px rgba(0, 0, 0, 0.75);
+    transition: 0.5s ease;
+}
+
+
+.table__button2{
+    width: 40px;
+    background-color: rgb(248, 164, 96);
+}
+.table__button3{
+    width: 40px;
+    background-color:brown;
+}
+
+.table__button4_inactive{
+    width: 40px;
+    background-color:gray;
+}
+.table__button4{
+    width: 40px;
+    background-color:red;
+}
+.table__button{
+    height:40px;
+    border-width: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.save__button{
+    display: block !important;
+}
+.hidden{
+    display: none;
+}
+
+.table__input{
+    display: block;
+    width:150px;
+    height:35px;
+    border-radius: 10px;
+    border:2px solid brown;
+}
+
