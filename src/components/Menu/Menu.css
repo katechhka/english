@@ -1,0 +1,18 @@
+.menu{
+    width:30%;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    gap:50px;
+    color:white;
+}
+.menu__item{
+    font-size:16px;
+    color:white;
+    text-decoration: none;
+}
+
+.menu__item:hover{
+    font-size:18px;
+    transition: 0.5s ease;
+}

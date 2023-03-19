@@ -2,29 +2,27 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Table from './components/Table/Table';
+import CreateTable from './components/CreateTable/CreateTable';
 import Card from './components/Card/Card';
-import words from './utils/words';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
 function App() {
-  
   return (
+    <Router>
     <div className="App">
       <Header/>
-      <div className="container">
-        {words.map((word, i) => (
-          <Table
-          key={i}
-            id={word.id}
-            english={word.english}
-            transcription={word.transcription}
-            russian={word.russian}
-            isSelected={word.isSelected}
-          ></Table>
-        ))}
-      </div>
-      <Card/>
+      <Routes>
+          <Route path="/" element={<CreateTable />} />
+          <Route path="/game" element={<Card />} />
+        </Routes>
       <Footer/>
     </div>
+    </Router>
   );
 }
 

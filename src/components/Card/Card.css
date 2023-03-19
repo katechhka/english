@@ -1,4 +1,7 @@
 .card__container{
+    flex-shrink: 0;
+    padding-top:20vh;
+    padding-bottom:30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +58,11 @@
 .card__arrowright{
     transform:rotate(180deg);
 }
-
+.card__arrowright:hover, .card__arrowleft:hover{
+    cursor:pointer;
+    width:42px;
+    transition: 0.2s ease;
+}
 /*+.card__arrowright:hover, .card__arrowleft:hover{
     width:45px;
     transition: 0.5s ease;
