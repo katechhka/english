@@ -32,6 +32,10 @@
     cursor: pointer;
 
 }
+
+.card__button:focus{
+    border: 1px solid black;
+}
 .card__button_hidden{
     display: none;
 }
